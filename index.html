@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon.png">
+    <title>TranslateCode</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>  
+        <h1>Translate<span class="cor">Code</span></h1>
+    </header>
+    
+
+    <main>
+        <form id="formulario">
+            <section class="radio">
+                <div id="radio">
+
+                    <div>
+                        <input type="radio" name="radio" id="radioCod">
+                        <label for="radioCod">Codificar</label>
+                    </div>
+    
+                    <div>
+                        <input type="radio" name="radio" id="radioDecod">
+                        <label for="radioDecod">Decodificar</label>
+                    </div>
+                </div>
+
+                <div class="escolha">
+                    <select id="selecao">
+                        <option name="option" value="selecionar">Código</option>
+                        <option name="option" value="base64">Base64</option>
+                        <option id="cifraDeCesar" name="option" value="cifraDeCesar">Cifra de César</option>
+                    </select>
+                
+                    <input type="number" name="numero" id="numero" min="1" value="1" placeholder="Incremento">
+                </div>
+            </section>
+        
+            <section>
+                <textarea name="texto1" id="texto1" cols="16" rows="5" placeholder="Digite sua mensagem"></textarea>
+            </section>
+
+            <input id="botaoCod" type="submit" value="Codificar Mensagem!">
+            <input id="botaoDecod" type="submit" value="Decodificar Mensagem!">
+
+            <section class="texto2">
+                <textarea name="texto2" id="texto2" cols="16" rows="5" placeholder="Mensagem codificada" readonly></textarea>
+            </section>
+        </form>
+    </main>
+
+
+    <footer>
+        <h2>Contatos</h2>
+        <div>
+            <a href="www.linkedin.com/in/jéssica-soares-a301361a2"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/JessicaSilvaSoares"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
